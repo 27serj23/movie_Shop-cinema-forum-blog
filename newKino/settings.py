@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django_extensions',
     'django.contrib.staticfiles',
     'movieShop',
+    'movieForum',
+    'online_cinema',
+    'blog',
 ]
 
 MIDDLEWARE = [
