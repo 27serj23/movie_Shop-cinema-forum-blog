@@ -123,10 +123,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, './movieShop/static'),
+    os.path.join(BASE_DIR, './movieForum/static'),
+    os.path.join(BASE_DIR, './blog/static'),
+    os.path.join(BASE_DIR, './online_cinema/static'),
 ]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
